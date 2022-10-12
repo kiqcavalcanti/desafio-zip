@@ -1,0 +1,41 @@
+services:
+  db:
+    container_name: db-desafio-zip
+    image: postgres:14.2-alpine
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres/data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=desafio-zip
+      - POSTGRES_USER=desafio-zip
+      - POSTGRES_PASSWORD=desafio-zip
+
+  app:
+    container_name: app-desafio-zip
+    build:
+      context: ./node
+      dockerfile: Dockerfile
+    volumes:
+      - ${PWD}/../:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+
+  yarn:
+    build:
+      context: ./node
+    volumes:
+      - ${PWD}/..:/app
+    entrypoint: yarn
+
+  nest:
+    build:
+      context: ./node
+    volumes:
+      - ${PWD}/..:/app
+    entrypoint: nest
+
