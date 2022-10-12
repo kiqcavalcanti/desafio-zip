@@ -15,5 +15,5 @@ Criar uma rota para zipar uma pasta e todo seu conteudo
   
 ## Arrumar Permissão arquivo .sh
 
-  chmod +x start-docker.sh
-  chmod +x start-docker-v1.sh
+  - chmod +x start-docker.sh
+  - chmod +x start-docker-v1.sh
