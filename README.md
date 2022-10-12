@@ -7,7 +7,7 @@ Criar uma rota para zipar uma pasta e todo seu conteudo
  - a rota deve ser um post e deve ser passada folderIds como array no corpo da requisição
  - a rota deve retornar um arquivo zip
  - esse arquivo zip tem que ter dentro dele todo o conteudo da pasta que esta sendo feito o download
- - foi feito um exemplo de uma rota para baixar arquivos, pode se basear nisso
+ - foi feito um exemplo de uma rota para baixar arquivos, pode se basear nisso (ZipController em src/app/zip)
 
 
 ## Como Rodar o projeto 
