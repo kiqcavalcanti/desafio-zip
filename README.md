@@ -8,3 +8,7 @@ Criar uma rota para zipar uma pasta e todo seu conteudo
  - a rota deve retornar um arquivo zip
  - esse arquivo zip tem que ter dentro dele todo o conteudo da pasta que esta sendo feito o download
  - foi feito um exemplo de uma rota para baixar arquivos, pode se basear nisso
+
+
+## Como Rodar o projeto 
+  ./start-docker.sh ou /start-docker-v1.sh
