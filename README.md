@@ -12,3 +12,8 @@ Criar uma rota para zipar uma pasta e todo seu conteudo
 
 ## Como Rodar o projeto 
   ./start-docker.sh ou /start-docker-v1.sh
+  
+## Arrumar Permissão arquivo .sh
+
+  chmod +x start-docker.sh
+  chmod +x start-docker-v1.sh
