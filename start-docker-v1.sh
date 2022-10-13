@@ -1,11 +1,11 @@
 #!/bin/sh
 
-cd .docker
+cd .docker/v1
 
 docker-compose down
 docker-compose build
 docker-compose run yarn
-docker-compose up db app -d
+docker-compose up -d db app
 docker-compose run yarn seed
 
 #if [ ! -f ".env" ]
